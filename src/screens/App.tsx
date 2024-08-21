@@ -1,6 +1,6 @@
-import './App.css';
-import { useFetchFriends } from './components/useFetchFriends';
-import BasicTable from "./Table.tsx";
+import '../App.css';
+import { useFetchFriends } from '../hooks/useFetchFriends.ts';
+import BasicTable from "../components/Table.tsx";
 
 function App() {
   const { friends, loading } = useFetchFriends();
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <h1>Friends Table</h1>
-        <BasicTable friends={friends}></BasicTable>
+        <BasicTable friends={friends}/>
     </>
   );
 }

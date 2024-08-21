@@ -1,18 +1,5 @@
 import { useState, useEffect } from 'react';
-
-interface Friend {
-    id: string;
-    name: string;
-    email: string;
-    phone: string;
-    addresses: Address[]
-}
-
-interface Address {
-  street: string;
-  city: string;
-  state: string;
-}
+import {Friend} from "../types/types.ts";
 
 export const useFetchFriends = () => {
   const [friends, setFriends] = useState<Friend[]>([]);

@@ -6,20 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import {Tooltip} from "@mui/material";
-
-interface Address {
-    street: string;
-    city: string;
-    state: string;
-}
-
-interface Friend {
-  id: string;
-  name: string;
-  email: string;
-  phone: string;
-  Address: Address[]
-}
+import {Friend} from "../types/types.ts";
 
 interface BasicTableProps {
   friends: Friend[];
