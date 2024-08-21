@@ -5,7 +5,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import {Tooltip} from "@mui/material";
+import {Tooltip, Typography} from "@mui/material";
 import {Friend} from "../types/types.ts";
 
 interface BasicTableProps {
@@ -18,9 +18,21 @@ export default function BasicTable({ friends }: BasicTableProps) {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>Name</TableCell>
-              <TableCell>Email</TableCell>
-              <TableCell>Address</TableCell>
+              <TableCell>
+                  <Typography variant="h6" component="div">
+                      Name
+                  </Typography>
+              </TableCell>
+              <TableCell>
+                  <Typography variant="h6" component="div">
+                      Email
+                  </Typography>
+              </TableCell>
+              <TableCell>
+                  <Typography variant="h6" component="div">
+                      Address
+                  </Typography>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
